@@ -29,6 +29,16 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 375px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 105vh;
+  }
+}
+
 .container__left {
   color: white;
   display: -webkit-box;
@@ -53,6 +63,21 @@ body {
   padding-bottom: 2rem;
 }
 
+@media screen and (max-width: 375px) {
+  .container__left {
+    width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding-left: 0;
+    height: 40vh;
+  }
+  .container__left h1 {
+    font-size: 2rem;
+  }
+}
+
 .container__right {
   width: 47vw;
   height: 100vh;
@@ -67,6 +92,15 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 3vw;
+}
+
+@media screen and (max-width: 375px) {
+  .container__right {
+    width: 100vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 60vh;
+  }
 }
 
 .container__right__bottom__input {
@@ -105,10 +139,19 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 0.5rem;
+  -webkit-box-shadow: 1px 4px 5px 3px #3e3c49;
+          box-shadow: 1px 4px 5px 3px #3e3c49;
 }
 
 .container__right__top .test {
   font-weight: 400;
+}
+
+@media screen and (max-width: 375px) {
+  .container__right__top {
+    width: 90vw;
+    height: 10vh;
+  }
 }
 
 .container__right__bottom {
@@ -126,6 +169,8 @@ body {
           flex-direction: column;
   text-align: center;
   border-radius: 0.5rem;
+  -webkit-box-shadow: 0px 8px 5px 2px #3e3c49;
+          box-shadow: 0px 8px 5px 2px #3e3c49;
 }
 
 .container__right__bottom__input {
@@ -150,6 +195,12 @@ body {
   padding-bottom: 2vh;
 }
 
+@media screen and (max-width: 375px) {
+  .container__right__bottom__input input {
+    width: 80vw;
+  }
+}
+
 .btn {
   background-color: #38cc8c;
   color: white;
@@ -171,6 +222,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 0.5rem;
+  -webkit-box-shadow: 1px 4px 5px 3px rgba(0, 128, 0, 0.299);
+          box-shadow: 1px 4px 5px 3px rgba(0, 128, 0, 0.299);
+}
+
+@media screen and (max-width: 375px) {
+  .btn {
+    width: 80vw;
+    height: 6vh;
+  }
 }
 
 .container__right__bottom__btn p {
