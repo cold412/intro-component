@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -5,5 +6,180 @@
           box-sizing: border-box;
 }
 
+/* <!-- ## Colors --> */
+/* <!-- ### Primary --> */
+/* <!-- ### Accent --> */
+/* <!-- ### Neutral --> */
 /* @import '3.pages/' */
+body {
+  background-image: url(../img/bg-intro-desktop.png);
+  background-color: #ff7a7a;
+  font-family: Poppins;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(../img/bg-intro-mobile.png);
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__left {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: start;
+  width: 48vw;
+  height: 100vh;
+  padding-left: 10vw;
+}
+
+.container__left h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.container__right {
+  width: 47vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 3vw;
+}
+
+.container__right__bottom__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 20vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.container__right__top {
+  background-color: #6055a5;
+  color: white;
+  font-weight: 400;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44vw;
+  margin-bottom: 2vh;
+  height: 6vh;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.5rem;
+}
+
+.container__right__top .test {
+  font-weight: 400;
+}
+
+.container__right__bottom {
+  background-color: white;
+  height: 50vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.container__right__bottom__input {
+  height: 40vh;
+}
+
+.container__right__bottom__input input {
+  text-align: start;
+  padding-left: 2rem;
+  height: 3rem;
+  width: 35vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0.5rem;
+  border: 1px solid #b9b6d3;
+  font-weight: 700;
+}
+
+.container__right__bottom__input .placeholderCont {
+  height: 10vh;
+  padding-bottom: 2vh;
+}
+
+.btn {
+  background-color: #38cc8c;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35vw;
+  margin-bottom: 2vh;
+  height: 6vh;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.5rem;
+}
+
+.container__right__bottom__btn p {
+  color: #b9b6d3;
+  font-size: 0.7rem;
+}
+
+.container__right__bottom__btn .terms {
+  color: #ff7a7a;
+  font-weight: 700;
+}
 /*# sourceMappingURL=main.css.map */

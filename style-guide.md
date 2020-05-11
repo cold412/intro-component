@@ -7,18 +7,18 @@ The designs were created to the following widths:
 - Mobile: 375px
 - Desktop: 1440px
 
-## Colors
+<!-- ## Colors -->
 
-### Primary
+<!-- ### Primary -->
 
 - Red: hsl(0, 100%, 74%) 
 - Green: hsl(154, 59%, 51%)
 
-### Accent
+<!-- ### Accent -->
 
 - Blue: hsl(248, 32%, 49%)
 
-### Neutral
+<!-- ### Neutral -->
 
 - Dark Blue: hsl(249, 10%, 26%) 
 - Grayish Blue: hsl(246, 25%, 77%)

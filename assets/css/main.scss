@@ -1,12 +1,135 @@
-@import '1.tools/fonts';
-@import '1.tools/normalize';
-@import '1.tools/vars';
-@import '2.basics/bodyElements';
-@import '2.basics/buttons';
-@import '2.basics/colors';
-@import '2.basics/links';
-@import '2.basics/typography';
-
+@import "1.tools/fonts";
+@import "1.tools/normalize";
+@import "1.tools/vars";
+@import "2.basics/bodyElements";
+@import "2.basics/buttons";
+@import "2.basics/colors";
+@import "2.basics/links";
+@import "2.basics/typography";
 
 /* @import '3.pages/' */
+
+body {
+  background-image: url(../img/bg-intro-desktop.png);
+  background-color: $Red;
+  font-family: $font;
+
+  @media screen and (max-width: 375px) {
+    background-image: url(../img/bg-intro-mobile.png);
+  }
+}
+
+.container {
+  display: flex;
+}
+
+.container__left {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  width: 48vw;
+  height: 100vh;
+  padding-left: 10vw;
+  h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.container__right {
+  width: 47vw;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 3vw;
+}
+
+.container__right__bottom__input {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  justify-content: space-between;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.container__right__top {
+  background-color: $Blue;
+  color: white;
+  font-weight: 400;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+  justify-content: center;
+  width: 44vw;
+  margin-bottom: 2vh;
+  height: 6vh;
+  text-align: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  .test {
+    font-weight: 400;
+  }
+}
+
+.container__right__bottom {
+  background-color: white;
+  height: 50vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.container__right__bottom__input {
+  height: 40vh;
+  input {
+    text-align: start;
+    padding-left: 2rem;
+    height: 3rem;
+    width: 35vw;
+    justify-content: center;
+  border-radius: 0.5rem;
+  border: 1px solid $GrayishBlue;
+  font-weight: 700;
+  }
+  .placeholderCont{
+    height: 10vh;
+    padding-bottom: 2vh;
+  }
+}
+
+.btn{
+  background-color: $Green;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+  justify-content: center;
+  width: 35vw;
+  margin-bottom: 2vh;
+  height: 6vh;
+  text-align: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+
+.container__right__bottom__btn{
+  p{
+    color: $GrayishBlue;
+    font-size: 0.7rem;
+  }
+  .terms{
+    color: $Red;
+    font-weight: 700;
+  }
+}
 
